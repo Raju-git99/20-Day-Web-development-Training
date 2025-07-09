@@ -1,0 +1,174 @@
+.navbar {
+    position: absolute;
+    color: white;
+    padding: 0px;
+    height: 63px;
+    margin: 0px;
+    display: flex;
+    border-radius: 40px;
+    /* border: 6px solid rgb(118, 6, 6); */
+
+}
+
+#main {
+    background-image: url('bg.jpg');
+    height: 440px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+}
+
+#home {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+#About {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+#services {
+    padding: 10px;
+    margin: 5px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+#blank {
+    padding: 10px;
+    margin: 5px;
+    width: 970px;
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+#contact {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+
+#login {
+    padding: 10px;
+    margin: 5px;
+    color: rgb(198, 7, 7) solid 2px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    color: rgb(0, 255, 187);
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+}
+
+.corner {
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+}
+.card img {
+    width: 153px;
+    height: 235px;
+    border-radius: 12px;
+    display: block;
+}
+
+#images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    margin-top: 2px;
+    border-radius: 20px;
+}
+
+
+.image {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+#about-us {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00ffc8;
+}
+#about-us p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
