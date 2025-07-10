@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Profile Page</title>
+  <link rel="stylesheet" href="Assignment4.1.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo" class="logo" />
+      <div class="nav-left">
+        <a href="#">Home</a>
+      </div>
+      <div class="nav-center">
+        <a href="#">Student Profile</a>
+      </div>
+      <div class="nav-right">
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&h=300"
+      alt="Banner Image" />
+  </section>
+
+
+  <main class="main-section">
+
+    <div class="image-grid">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Student Image" />
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Student Image" />
+      <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="Student Image" />
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Student Image" />
+      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Student Image" />
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Student Image" />
+    </div>
+
+    <div class="student-table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+        </tr>
+        <tr>
+          <td>Raju Singh</td>
+          <td>1001</td>
+        </tr>
+        <tr>
+          <td>Amit Bikram Mishra</td>
+          <td>1002</td>
+        </tr>
+        <tr>
+          <td>Shubham Shaw</td>
+          <td>1003</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>This site contains student profile information including images and roll numbers.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+
+</body>
+
+</html>
