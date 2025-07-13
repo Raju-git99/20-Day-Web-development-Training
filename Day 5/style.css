@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background: #162c5b;
+  color: white;
+  font-size: 14px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.logo span {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 107%;
+}
+
+.slides-container img {
+  flex-shrink: 0;
+  width: 1600px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 24%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+.categories button {
+  background: none;
+  border: 1px solid #0056b3;
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #0056b3;
+}
+
+.search input {
+  padding: 8px 12px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #162c5b;
+  font-weight: bold;
+}
+
+.auth-buttons button {
+  border: 1px solid #0056b3;
+  background: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.auth-buttons .signup {
+  font-weight: bold;
+}
+
+.sub-menu {
+  background: #f8f8f8;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  border-top: 1px solid #ddd;
+}
+
+.sub-menu a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #90e0ef 0%, #ffffff 40%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 26px 20px;
+  position: relative;
+  bottom: 94px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 323px;
+  /* display: flex; */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.card h2 {
+  margin: 5px 0 20px;
+  font-size: 18px;
+  color: #222;
+}
+
+.card a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.trending-section {
+  padding: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 50px;
+  border-bottom: 2px solid #ddd;
+  margin-left: 11px;
+}
+
+.tabs a {
+  text-decoration: none;
+  padding: 10px 0;
+  color: #444;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs a.active {
+  color: #1a73e8;
+  border-color: #1a73e8;
+  font-weight: bold;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-right: 255px;
+  margin-top: 30px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 280px;
+  position: relative;
+}
+
+.course-card {
+  background: linear-gradient(to right, #cb2d3e, #ef473a);
+  color: white;
+  padding: 18px;
+  position: relative;
+}
+
+.course-card p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: white;
+  padding-bottom: 7px;
+}
+
+.label {
+  position: absolute;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  top: 10px;
+  right: 10px;
+}
+
+.corner-label {
+  background: #999;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+.rating {
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+}
+
+.upper-card img {
+  height: 16vh;
+  width: 16vw;
+}
+
+.trending-section {
+  position: relative;
+  left: 115px;
+  bottom: 120px;
+}
+
+.course-card:hover {
+  color: white;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.upper-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.rating {
+  padding: 10px;
+}
+
+.label.corner-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.course-card:hover .hover-content {
+  display: flex;
+}
+
+.hover-content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.hover-content button {
+  padding: 10px;
+  background: #fff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.Browse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 85px;
+}
+
+.btn {
+  height: 33px;
+  width: 160px;
+  cursor: pointer;
+  background: linear-gradient(98deg, #248de4, #243be4);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  position: relative;
+  bottom: 10px;
+}
+
+.Browse i {
+  margin-bottom: 40px;
+}
+
+/* Carrer Card Styling */
+
+.Career-section {
+  padding: 40px;
+  position: relative;
+  left: 115px;
+  bottom: 120px;
+}
+
+.career-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-right: 255px;
+  margin-top: 30px;
+}
+
+.career-card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 359px;
+  position: relative;
+  background: linear-gradient(to right, #cb2d3e, #ef473a);
+  color: white;
+  padding: 18px;
+  position: relative;
+}
+
+.career-card p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: white;
+  padding-bottom: 7px;
+}
+
+.career-upper-card img {
+  height: 16vh;
+  width: 16vw;
+}
+
+.career-card:hover {
+  color: white;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+}
+
+.career-upper-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.rating {
+  padding: 10px;
+}
+
+.label.corner-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.career-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.career-card:hover .career-hover-content {
+  display: flex;
+}
+
+.career-hover-content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.career-hover-content button {
+  padding: 10px;
+  background: #fff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.separation {
+  background-color: #007aff;
+  height: 85px;
+  font-size: 20px;
+  position: relative;
+  bottom: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.separation a {
+  text-decoration: none;
+  padding: 10px 33px;
+  background-color: white;
+  border-radius: 2px;
+}

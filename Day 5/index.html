@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edureka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/png;base64,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">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-right">
+            <span>📞 New Course Enquiry :</span>
+            <span>🇮🇳 +91 89517 55408</span>
+        </div>
+        <div class="top-bar-left">
+            <span class="deal">Career Resolution Deal - <strong>Flat 10% Off</strong> | Ends in : <span id="timer">11h
+                    40m
+                    52s</span> <a href="#">GRAB NOW</a></span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://www.edureka.co/img/Edureka_Ver_Enter_Logo.webp" alt="Edureka">
+        </div>
+
+        <div class="categories">
+            <button>Categories ▼</button>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search courses">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">Corporate Training</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+        </div>
+    </nav>
+
+    <div class="sub-menu">
+        <span><strong>Browse Courses</strong> ▼</span>
+        <a href="#">Artificial Intelligence</a>
+        <a href="#">BI and Visualization</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">DevOps</a>
+        <a href="#">Data Science</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Programming & Frameworks</a>
+        <a href="#">Executive Programs</a>
+    </div>
+    <div class="hero-slider">
+        <button class="scroll-btn left" onclick="scrollSlider(-1)">&#10094;</button>
+        <div class="slides-container" id="slider">
+            <img src="https://d24vv731hdkcnd.cloudfront.net/carousel-banner/1742391610-Gen-AI-%26-ML-Banner_new.webp"
+                alt="Banner 1" />
+            <img src="https://d24vv731hdkcnd.cloudfront.net/carousel-banner/1752126773-Career%20resolution-Web%20banner.webp"
+                alt="Banner 2" />
+            <img src="https://d24vv731hdkcnd.cloudfront.net/carousel-banner/1745386086-DevOps-Web-Banner_1920x410.webp"
+                alt="Banner 2" />
+        </div>
+        <button class="scroll-btn right" onclick="scrollSlider(1)">&#10095;</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <p>BECOME A <br></p>
+            <h2>DEVOPS ENGINEER <br></h2>
+            <a href="#">KNOW MORE <span>&#x2192;</span></a>
+        </div>
+        <div class="card">
+            <p>BECOME A</p>
+            <h2>CLOUD ARCHITECT</h2>
+            <a href="#">KNOW MORE <span>&#x2192;</span></a>
+        </div>
+        <div class="card">
+            <p>BECOME A</p>
+            <h2>DATA SCIENTIST</h2>
+            <a href="#">KNOW MORE <span>&#x2192;</span></a>
+        </div>
+    </div>
+
+    <section class="trending-section">
+        <h2>Trending Courses</h2>
+        <nav class="tabs">
+            <a class="active" href="#">All</a>
+            <a href="#">Artificial Intelligence</a>
+            <a href="#">BI and Visualization</a>
+            <a href="#">Cloud Computing</a>
+            <a href="#">DevOps</a>
+            <a href="#">Data Science</a>
+            <a href="#">Cyber Security</a>
+        </nav>
+        <div class="course-cards">
+            <div class="course-card">
+                <span class="label corner-label">BEST SELLER</span>
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Agentic AI Certification Training Course...</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.4</strong> (42)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Artificial Intelligence Certification Course..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.7</strong> (6100)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Machine Learning Operations Certification ..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.3</strong> (2200)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Machine Learning Operations Certification ..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.3</strong> (2200)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+    </section>
+    <div class="Browse">
+        <button class="btn">Browse All Courses</button>
+        <i>Explore our wide range of courses</i>
+    </div>
+    <section class="Career-section">
+        <h2>Career Related Programs</h2>
+        <div class="career-cards">
+            <div class="career-card">
+                <span class="label corner-label">BEST SELLER</span>
+                <div class="career-upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Generative AI Certification Training Cours..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.4</strong> (8650)</p>
+                <div class="career-hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Generative AI Certification Training Cours..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.4</strong> (8650)</p>
+                <div class="career-hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Generative AI Certification Training Cours..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.4</strong> (8650)</p>
+                <div class="career-hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trending-section">
+        <h2>Recent additions</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <span class="label corner-label">BEST SELLER</span>
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Agentic AI Certification Training Course...</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.4</strong> (42)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Artificial Intelligence Certification Course..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.7</strong> (6100)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Machine Learning Operations Certification ..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.3</strong> (2200)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="upper-card">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2455670017/display_1500/stock-photo-work-safety-concept-health-care-insurance-concept-guarantee-service-certification-approved-2455670017.jpg"
+                        alt="">
+                </div>
+                <p>Machine Learning Operations Certification ..</p>
+                <p class="rating">Reviews &#9733 &#9733 &#9733 &#9733 &#9733 <strong>4.3</strong> (2200)</p>
+                <div class="hover-content">
+                    <p class="next-batch">Next batch<br><strong>In 1 days - 12th July</strong></p>
+                    <p><em>What will I learn?</em></p>
+                    <ul>
+                        <li>Module 1: Agentic AI Essentials</li>
+                        <li>Module 2: Agentic AI: Architectures...</li>
+                        <li>Module 3: Working with LangChain...</li>
+                    </ul>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+    </section>
+    <div class="separation">
+        <label>
+            Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with Edureka
+        </label>
+        <a href="#">View All Cousres</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
