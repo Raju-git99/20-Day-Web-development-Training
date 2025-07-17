@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 50px auto;
+            transition: background-color 0.3s;
+        }
+
+        .color-box {
+            width: 80px;
+            height: 120px;
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="main" id="mainBox">
+        <div class="color-box red" data-color="red"></div>
+        <div class="color-box blue" data-color="blue"></div>
+        <div class="color-box pink" data-color="pink"></div>
+        <div class="color-box yellow" data-color="yellow"></div>
+    </div> -->
+    <div class="main" id="mainBox">
+        <div class="color-box red" onclick="changeColor('red')"></div>
+        <div class="color-box blue" onclick="changeColor('blue')"></div>
+        <div class="color-box pink" onclick="changeColor('pink')"></div>
+        <div class="color-box yellow" onclick="changeColor('yellow')"></div>
+    </div>
+
+    <script>
+        // const mainbox = document.getElementById('mainBox');
+        // const colors = document.querySelectorAll('.color-box');
+
+        // colors.forEach(box => {
+        //     box.addEventListener('click', () => {
+        //         const selectColor = box.getAttribute('data-color');
+        //         mainbox.style.backgroundColor = selectcolor;
+        //     });
+        // });
+        function changeColor(color) {
+            const mainbox = document.getElementById('mainBox');
+            if (color === 'red') {
+                mainbox.style.backgroundColor = 'red';
+            }
+            else if (color === 'blue') {
+                mainbox.style.backgroundColor = 'blue';
+            }
+            else if (color === 'pink') {
+                mainbox.style.backgroundColor = 'pink';
+            }
+            else if (color === 'yellow') {
+                mainbox.style.backgroundColor = 'yellow';
+            }
+            else{
+                mainbox.style.backgroundColor = 'white'
+            }
+        }
+    </script>
+
+</body>
+
+</html>
