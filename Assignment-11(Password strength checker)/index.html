@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Strength Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      width: 250px;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .valid {
+      color: green;
+    }
+    .invalid {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Password Strength Checker</h2>
+  <input type="password" id="password" placeholder="Enter your password" />
+  <ul>
+    <li id="length" class="invalid">At least 8 characters</li>
+    <li id="uppercase" class="invalid">At least one uppercase letter</li>
+    <li id="lowercase" class="invalid">At least one lowercase letter</li>
+    <li id="number" class="invalid">At least one number</li>
+    <li id="special" class="invalid">At least one special character</li>
+  </ul>
+  <div id="strength"></div>
+
+  <script>
+    const password = document.getElementById('password');
+    const criteria = {
+      length: document.getElementById('length'),
+      uppercase: document.getElementById('uppercase'),
+      lowercase: document.getElementById('lowercase'),
+      number: document.getElementById('number'),
+      special: document.getElementById('special')
+    };
+    const strength = document.getElementById('strength');
+
+    password.addEventListener('input', () => {
+      const val = password.value;
+      const checks = {
+        length: val.length >= 8,
+        uppercase: /[A-Z]/.test(val),
+        lowercase: /[a-z]/.test(val),
+        number: /[0-9]/.test(val),
+        special: /[!@#$%^&*(),.?":{}|<>]/.test(val)
+      };
+
+      for (let key in checks) {
+        criteria[key].className = checks[key] ? 'valid' : 'invalid';
+      }
+
+      // Count how many checks passed
+      const passedCount = Object.values(checks).filter(Boolean).length;
+
+      if (val.length === 0) {
+        strength.textContent = '';
+      } else if (passedCount <= 2) {
+        strength.textContent = 'Strength: Weak';
+        strength.style.color = 'red';
+      } else if (passedCount <= 4) {
+        strength.textContent = 'Strength: Medium';
+        strength.style.color = 'orange';
+      } else {
+        strength.textContent = 'Strength: Strong';
+        strength.style.color = 'green';
+      }
+    });
+  </script>
+</body>
+</html>
